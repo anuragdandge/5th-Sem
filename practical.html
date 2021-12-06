@@ -12,72 +12,11 @@
     <!-- href="https://cpwebassets.codepen.io/assets/favicon/logo-pin-8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg" -->
     <title>5th Sem | Home</title>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="/CSS/style.css" />
-    <script src="./JS/script.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script>
-      $(document).ready(function () {
-        $(".main1").hide();
-           $(".main2").hide();
-           $(".main3").hide();
-           $(".main4").hide();
-           $(".main5").hide();
-        $("#home").click(function () {
-           $(".main").show();
-           $(".main1").hide();
-           $(".main2").hide();
-           $(".main3").hide();
-           $(".main4").hide();
-           $(".main5").hide();
-        });
-        $("#practical").click(function () {
-            
-          $(".main").hide();
-           $(".main1").show();
-           $(".main2").hide();
-           $(".main3").hide();
-           $(".main4").hide();
-           $(".main5").hide();
-
-        });
-        $("#notif").click(function () {
-          $(".main").hide();
-           $(".main1").hide();
-           $(".main2").show();
-           $(".main3").hide();
-           $(".main4").hide();
-           $(".main5").hide();
-        });
-        $("#charts").click(function () {
-          $(".main").hide();
-           $(".main1").hide();
-           $(".main2").hide();
-           $(".main3").show();
-           $(".main4").hide();
-           $(".main5").hide();
-        });
-        $("#calander").click(function () {
-          $(".main").hide();
-           $(".main1").hide();
-           $(".main2").hide();
-           $(".main3").hide();
-           $(".main4").show();
-           $(".main5").hide();
-        });
-        $("#signup").click(function () {
-          $(".main").hide();
-           $(".main1").hide();
-           $(".main2").hide();
-           $(".main3").hide();
-           $(".main4").hide();
-           $(".main5").show();
-        });
-      });
-    </script>
     <meta
       name="viewport"
       content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
     />
+
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -103,6 +42,7 @@
       /*----------bootstrap-navbar-css------------*/
       .navbar-logo {
         padding: 15px;
+        color: #fff;
       }
       .navbar-mainbg {
         background-color: #5161ce;
@@ -268,9 +208,7 @@
   <body>
     <!-- Nav Start  -->
     <nav class="navbar navbar-expand-custom navbar-mainbg">
-      <a class="navbar-brand navbar-logo bg-light" href="#" id="brand">
-        5th Sem Notes
-      </a>
+      <a class="navbar-brand navbar-logo" href="#"> 5th Sem Notes </a>
       <button
         class="navbar-toggler"
         type="button"
@@ -286,32 +224,32 @@
             <div class="left"></div>
             <div class="right"></div>
           </div>
-          <li class="nav-item active" id="home">
-            <a class="nav-link" href="javascript:void(0);"
+          <li class="nav-item ">
+            <a class="nav-link" href=""
               ><i class="fas fa-home"></i> Home
             </a>
           </li>
-          <li class="nav-item" id="practical">
-            <a class="nav-link" href="javascript:void(0);"
+          <li class="nav-item active">
+            <a class="nav-link" href=""
               ><i class="far fa-address-book"></i> Practical
             </a>
           </li>
-          <li class="nav-item" id="notif">
+          <li class="nav-item">
             <a class="nav-link" href="javascript:void(0);"
               ><i class="fas fa-bell"></i>Notifications
             </a>
           </li>
-          <li class="nav-item" id="calander">
+          <!-- <li class="nav-item">
             <a class="nav-link" href="javascript:void(0);"
               ><i class="far fa-calendar-alt"></i>Calendar</a
             >
           </li>
-          <li class="nav-item" id="charts">
+          <li class="nav-item">
             <a class="nav-link" href="javascript:void(0);"
               ><i class="far fa-chart-bar"></i>Charts</a
             >
-          </li>
-          <li class="nav-item" id="signup">
+          </li> -->
+          <li class="nav-item">
             <a class="nav-link" href="javascript:void(0);"
               ><i class="fas fa-sign-in-alt"></i>Sign Up
             </a>
@@ -321,30 +259,11 @@
     </nav>
     <!-- Nav End   -->
 
-    <div class="container main">
-      Syllabus
-      <div class="container">Container</div>
-    </div>
-
-    <div class="container main1">
-      Main 1
-      <div class=""> 1</div>
-    </div>
-    <div class="container main2">
-      Main 2
-      <div class=""> 2</div>
-    </div>
-    <div class="container main3">
-      Main 3
-      <div class=""> 3</div>
-    </div>
-    <div class="container main4">
-      Main 4
-      <div class=""> 4</div>
-    </div>
-    <div class="container main5">
-      Main 5
-      <div class=""> 5</div>
+    <div class="main">
+      Main
+      <div class="container">
+        Container
+      </div>
     </div>
 
     <script src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-1b93190375e9ccc259df3a57c1abc0e64599724ae30d7ea4c6877eb615f89387.js"></script>
@@ -408,7 +327,12 @@
         // Account for home page with empty path
         if (path == "") {
           path = "index.html";
+        }else if (path == "practical.html") {
+          path = "practical.html";
+        }if (path == "") {
+          path = "index.html";
         }
+         
 
         var target = $('#navbarSupportedContent ul li a[href="' + path + '"]');
         // Add active class to target link
