@@ -13,6 +13,7 @@
     <title>5th Sem | Home</title>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="/CSS/style.css" />
+    <link rel="stylesheet" href="/CSS/bootstrap.css">
     <script src="./JS/script.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>
@@ -24,6 +25,7 @@
         $(".main5").hide();
         $("#home").click(function () {
           $(".main1").hide();
+          $(".syllabus_max").show();
           $(".main2").hide();
           $(".main3").hide();
           $(".main4").hide();
@@ -31,6 +33,7 @@
         });
         $("#practical").click(function () {
           $(".main1").show();
+          $(".syllabus_max").hide();
           $(".main2").hide();
           $(".main3").hide();
           $(".main4").hide();
@@ -46,15 +49,15 @@
         $("#charts").click(function () {
           $(".main1").hide();
           $(".main2").hide();
-          $(".main3").show();
-          $(".main4").hide();
+          $(".main3").hide();
+          $(".main4").show();
           $(".main5").hide();
         });
         $("#calander").click(function () {
           $(".main1").hide();
           $(".main2").hide();
-          $(".main3").hide();
-          $(".main4").show();
+          $(".main3").show();
+          $(".main4").hide();
           $(".main5").hide();
         });
         $("#signup").click(function () {
@@ -63,6 +66,18 @@
           $(".main3").hide();
           $(".main4").hide();
           $(".main5").show();
+        });
+
+         
+        $(window).resize(function () {
+          if ($(window).width() < 600 && $(window).width() > 1 ) {
+            $(".syllabus_min").show(); 
+            $(".syllabus_max").hide();
+          }
+          if($(window).width() > 600 && $(window).width() < 1920){
+            $(".syllabus_min").hide();
+            $(".syllabus_max").show();
+          }
         });
       });
     </script>
@@ -314,12 +329,54 @@
     <!-- Nav End   -->
 
     <div class="main">
-
-      
+      <div class="syllabus_max">
         <h1 class="center">Syllabus</h1>
-        <iframe src="SYLLABUS 5&6SEM.pdf" width="100%" height="700px">
-        </iframe>
+        <iframe src="SYLLABUS 5&6SEM.pdf" width="100%" height="700px"> </iframe>
+      </div>
+      <div class="syllabus_min">
+        <h1 class="center">Syllabus </h1>
+        <img
+          class="fluid-image"
+          src="/IMG/Core-Java.png"
+          alt="loading..."
+          srcset=""
+        />
+        <img
+          class="fluid-image"
+          src="/IMG/DCN.png"
+          alt="loading..."
+          srcset=""
+        />
+        <img
+          class="fluid-image"
+          src="/IMG/DWH.png"
+          alt="loading..."
+          srcset=""
+        />
+        <img
+          class="fluid-image"
+          src="/IMG/EH.png"
+          alt="loading..."
+          srcset=""
+        />
+        <img
+          class="fluid-image"
+          src="/IMG/PHP.png"
+          alt="loading..."
+          srcset=""
+        />
+        <img
+          class="fluid-image"
+          src="/IMG/SPM-II.png"
+          alt="loading..."
+          srcset=""
+        />
+      </div>
 
+      <div class="main1">
+        Practical
+        <div class="">1</div>
+      </div>
       <div class="container main2">
         Main 2
         <div class="">2</div>

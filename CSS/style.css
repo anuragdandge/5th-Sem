@@ -1,7 +1,11 @@
 #brand {
   color: white;
 }
-
+iframe{
+  border-radius:20px ;
+  border: none;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
 .center {
   color: white;
    text-align: center;
@@ -15,7 +19,16 @@
   border-radius: 10px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+img{
+  border-radius: 20px;
 
+}
+.fluid-image {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
 .main{
   border-radius: 10px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -43,3 +56,21 @@
 .main5{
   background-color: #333333;
 }
+
+
+
+@media only screen and (max-width: 600px) {
+  .syllabus_max {
+    display: none ;
+  }
+ 
+}
+ 
+@media only screen and (max-width: 1920px) {
+  .syllabus_min {
+    display: none ;
+  }
+ 
+}
+
+  
