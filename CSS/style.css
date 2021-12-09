@@ -1,35 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Roboto:wght@100&family=Source+Sans+3:wght@200&display=swap');
+
 #brand {
   color: white;
 }
-iframe{
-  border-radius:20px ;
+
+iframe {
+  border-radius: 20px;
   border: none;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+
 .center {
   color: white;
-   text-align: center;
-   margin: 0;
-   padding: 0;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  /* font-family: 'Open Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
+   */
+   font-weight: bold;
+  font-family: 'Open Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  font-family: 'Source Sans 3', sans-serif;
 }
- .main1 , .main2 , .main3 , .main4 , .main5{
+
+.main1, .main2, .main3, .main4, .main5 {
   margin-top: 20px;
   margin-bottom: 20px;
   /* height: 100vh; */
   border-radius: 10px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-img{
+
+img {
   border-radius: 20px;
 
 }
+
 .fluid-image {
   width: 100%;
-  height: 100%;
   margin-bottom: 20px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-.main{
+
+.main {
   border-radius: 10px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   margin: 10px 20px 20px 20px;
@@ -41,19 +56,23 @@ img{
   font-family: "Times New Roman", Times, serif;
 }
 
-.main1{
+.main1 {
   background-color: #d1d1d1;
 }
-.main2{
+
+.main2 {
   background-color: #b6b6b6;
 }
-.main3{
+
+.main3 {
   background-color: #969696;
 }
-.main4{
+
+.main4 {
   background-color: #525252;
 }
-.main5{
+
+.main5 {
   background-color: #333333;
 }
 
@@ -61,10 +80,27 @@ img{
 
 @media only screen and (max-width: 600px) {
   .syllabus_max {
-    display: none ;
+    display: none;
   }
- 
-}
- 
 
-  
+  .main {
+    padding: 0px;
+    background: transparent;
+    box-shadow: none;
+  }
+
+  .center {
+    color: black;
+    margin-bottom: 10px;
+  }
+
+}
+
+
+@media (min-width: 600px) and (max-width: 2560px)  {
+   
+  .syllabus_min{
+    display: none;
+  }
+
+}
